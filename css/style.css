@@ -105,7 +105,7 @@
 /* Nav e Menu */
 
 .nav{
-    background: linear-gradient(150deg,rgba(19,106,138,.65) 30%,rgba(38,120,113,.44) 70%) 0 0/cover fixed,url(/img/nav.png) center/cover no-repeat fixed;
+    background: linear-gradient(150deg,rgba(19,106,138,.65) 30%,rgba(38,120,113,.44) 70%) 0 0/cover fixed,url("/img/nav.png") center/cover no-repeat fixed;
     width: 100vw;
     height: 200px;
     position: relative;
