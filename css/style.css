@@ -212,6 +212,7 @@
     margin: 20px auto;
     font-family: 'Raleway',sans-serif;
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
 }
 
@@ -220,7 +221,6 @@
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,.3);
     overflow: hidden;
-    break-inside: avoid-column;
     width: 380px;
     margin: 5px;
 }
@@ -316,4 +316,212 @@
     justify-content: center;
     text-align: center;
     padding-top: 30px; 
+}
+
+
+@media (max-width: 992px) {
+
+    .menu-container{
+        width: 70%;
+    }
+    .menu-body{
+        margin-right: 1vw;
+    }
+    .menu-body ul li a {
+        font-size: .8em;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .container{
+        width: 95vw;
+        padding: 0 1vw;
+    }
+
+    .nav{
+        height: 70vh;
+    }
+
+    .nav-circle{
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .desc{
+        padding-top: 10px; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .social{
+        margin: 0 auto;
+        padding-top: 10px; 
+        justify-content: center;
+    }
+
+    .desc-container{
+        height: 100%;
+        padding-top: 10vh; 
+    }
+
+    .menu{
+        height: 30vh;
+
+    }
+
+    .menu-container{
+        width: 100%;
+        height: 100%;
+        margin: unset;
+        padding: unset;
+        flex-wrap: unset;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-body{
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        float: unset;
+    }
+
+    .menu-body ul{
+        display: block;
+        list-style: unset;
+        margin: auto auto;
+        width: 40vw;
+    }
+
+    .menu-body ul li{
+        display: block;
+        border-right: none;
+        border-bottom: 2px solid white;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .body{
+        margin: 10px auto;
+    }
+
+    .footer{
+        padding: 10px 0;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .criado{
+        height: 5%;
+    }
+
+    /*Desativado*/
+
+    .form-search{
+        float: unset;
+        margin: 15px auto;
+        display: block;
+        width: 54vw;
+    }
+
+}
+
+
+
+/* Responsividade Iphone 5*/
+@media (max-width: 320px){
+    .container{
+        width: 95vw;
+        padding: 0 1vw;
+    }
+
+    .nav{
+        height: 70vh;
+    }
+
+    .nav-circle{
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .desc{
+        padding-top: 10px; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .social{
+        margin: 0 auto;
+        padding-top: 10px; 
+        justify-content: center;
+    }
+
+    .desc-container{
+        height: 100%;
+        padding-top: 3vh; 
+    }
+
+    .menu{
+        height: 30vh;
+
+    }
+
+    .menu-container{
+        width: 100%;
+        height: 100%;
+        margin: unset;
+        padding: unset;
+        flex-wrap: unset;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-body{
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        float: unset;
+    }
+
+    .menu-body ul{
+        display: block;
+        list-style: unset;
+        margin: auto auto;
+        width: 40vw;
+    }
+
+    .menu-body ul li{
+        display: block;
+        border-right: none;
+        border-bottom: 2px solid white;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .body{
+        margin: 10px auto;
+    }
+
+    .footer{
+        padding: 10px 0;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .criado{
+        height: 5%;
+    }
+
+    /*Desativado*/
+
+    .form-search{
+        display: none;
+    }
+
 }
