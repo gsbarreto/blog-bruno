@@ -210,9 +210,16 @@
 
 .body{
     margin: 20px auto;
+    max-height: 1200px;
     font-family: 'Raleway',sans-serif;
     display: flex;
     flex-flow: row wrap;
+}
+
+@media (max-width: 400px){
+    .body{
+        column-count: 2;
+    }
 }
 
 .box{
@@ -303,17 +310,49 @@
 }
 
 .sb-bottom{
-    padding: 6px;
 }
 
-.parceiros ul{
+.social-button-footer{
+    background-color: white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
     text-align: center;
+    display: inline;
+    float: left;
+    margin-right: 5px; 
+
+}
+
+.social-button-footer i{
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:#333333;
+    font-size:1.3em;
+}
+
+.social-button-footer i:hover{
+    color:#28a0e8;
+    font-size:1.4em;
+}
+
+.contato-footer{
+    bottom: 0;
+    width: 20%;
+}
+
+.parceiros-footer{
+    float:right;
+}
+
+.parceiros-footer ul li{
     list-style: none;
 }
 
 .criado{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 30px; 
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
 }
