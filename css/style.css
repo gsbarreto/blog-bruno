@@ -176,25 +176,26 @@
 
 .form-search{
     position: relative;
-    float: right;
-    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     padding: 3px;
     background-color: white;
     border: #28a0e8 2px solid;
     border-radius: 2rem;
+    width: 200px;
 }
 
 .form-search input{
     border: none;
-    height: 20px;
-    margin-right: 5px;
+    height: 25px;
+    width: 170px;
     margin-left: 5px;
 }
 
 .form-search button{
     border: none;
-    background: white;
-    margin-right: 4px;
+    background: none;
 }
 
 .form-search button i{
@@ -341,7 +342,7 @@
     }
 
     .nav{
-        height: 70vh;
+        height: 515px;
     }
 
     .nav-circle{
@@ -367,7 +368,7 @@
     }
 
     .menu{
-        height: 30vh;
+        height: 220px;
 
     }
 
@@ -422,10 +423,11 @@
     /*Desativado*/
 
     .form-search{
-        float: unset;
         margin: 15px auto;
-        display: block;
-        width: 54vw;
+    }
+
+    .form-search input{
+        width: 170px;
     }
 
 }
@@ -440,7 +442,7 @@
     }
 
     .nav{
-        height: 70vh;
+        height: 398px;
     }
 
     .nav-circle{
@@ -466,7 +468,7 @@
     }
 
     .menu{
-        height: 30vh;
+        height: 170px;
 
     }
 
@@ -476,9 +478,10 @@
         margin: unset;
         padding: unset;
         flex-wrap: unset;
-        display: block;
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .menu-body{
@@ -521,7 +524,10 @@
     /*Desativado*/
 
     .form-search{
-        display: none;
+        margin: 15px auto;
     }
 
+    .form-search input{
+        width: 170px;
+    }
 }
